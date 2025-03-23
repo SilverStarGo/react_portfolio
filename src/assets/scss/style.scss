@@ -1,0 +1,17 @@
+/* CSS 코드를 모듈화하고 스타일 시트를 섹션별로 분리하여 관리. (코드의 가독성과 유지보수성을 높여줌) */
+
+@charset "UTF-8";
+
+/* setting */
+@import "setting/fonts";
+@import "setting/vars";
+@import "setting/reset";
+@import "setting/mixin";
+
+/* section */
+@import "section/header";
+@import "section/intro";
+@import "section/skill";
+@import "section/portfolio";
+@import "section/contact";
+@import "section/footer";
