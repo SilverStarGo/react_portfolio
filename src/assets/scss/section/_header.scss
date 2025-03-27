@@ -1,0 +1,28 @@
+#header {
+    @include position-fixed;
+    z-index: 10000;
+}
+.header_inner {
+    @include flex-between;
+    background-color: rgba(116, 99, 99, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 1rem;
+
+    .header_nav{
+        ul{
+            display: block;
+            position: absolute;
+            right: 0;
+
+            li{
+                display: block;
+                text-align: right;
+
+                a{
+                    display:inline-block;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
