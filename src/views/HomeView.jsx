@@ -4,6 +4,7 @@ import Main from "../components/Main"
 import Intro from "../components/Intro"
 import Skill from "../components/Skill"
 import Portfolio from "../components/Portfolio"
+import Selfstudy from "../components/Selfstudy";
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
@@ -15,6 +16,7 @@ const HomeView = () => {
             <Intro />
             <Skill />
             <Portfolio />
+            <Selfstudy />
             <Contact />
         </Main>
         <Footer/>
