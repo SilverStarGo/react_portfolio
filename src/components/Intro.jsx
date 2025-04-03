@@ -24,24 +24,24 @@ const Intro = ({ onIntroEnd }) => {
   }, [onIntroEnd]);
   
   return (
-    <motion.section
-      id="intro"
-      className='intro-section'
-      initial={{ opacity: 1 }}
-      animate={{ opacity: 1 - scrollProgress }}
-      transition={{ duration: 0.5 }}
-    >
+    // <motion.section
+    //   id="intro"
+    //   className='intro-section'
+    //   initial={{ opacity: 1 }}
+    //   animate={{ opacity: 1 - scrollProgress }}
+    //   transition={{ duration: 0.5 }}
+    // >
 
-      <motion.div 
-        className='intro_overlay left'
-        animate={{ $: `${-50 + scrollProgress * 50}%` }}
-        transition={{ duration: 0.5 }}
-      />
-      <motion.div 
-        className='intro_overlay right'
-        animate={{ $: `${50 + scrollProgress * 50}%` }}
-        transition={{ duration: 0.5 }}
-      />
+    //   <motion.div 
+    //     className='intro_overlay left'
+    //     animate={{ $: `${-50 + scrollProgress * 50}%` }}
+    //     transition={{ duration: 0.5 }}
+    //   />
+    //   <motion.div 
+    //     className='intro_overlay right'
+    //     animate={{ $: `${50 + scrollProgress * 50}%` }}
+    //     transition={{ duration: 0.5 }}
+    //   />
 
       <div className='intro_content'>
         <div className='intro_img'>
@@ -54,7 +54,7 @@ const Intro = ({ onIntroEnd }) => {
           <p>마지막 각오까지</p>
         </div>
       </div>
-    </motion.section>
+    // </motion.section>
   );
 };
 
