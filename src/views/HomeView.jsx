@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header"
 import Main from "../components/Main"
 import Intro from "../components/Intro"
@@ -9,21 +9,59 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
 const HomeView = () => {
-    const [showIntro, setShowIntro] = useState(true); // 인트로 화면 상태
+    const introRef = useRef(null);
+    const skillRef = useRef(null);
+    const portfolioRef = useRef(null);
+    const selfstudyRef = useRef(null);
+    const contactRef = useRef(null);
 
-    const handleIntroEnd = () => {
-        setShowIntro(false); // 인트로 종료 시 인트로 숨김
+    const handleScrollToIntro = () => {
+        introRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+
+    const handleScrollToSkill = () => {
+        skillRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+    const handleScrollToPortfolio = () => {
+        portfolioRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+    const handleScrollToSelfstudy = () => {
+        selfstudyRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+    const handleScrollToContact = () => {
+        contactRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     };
 
     return (
     <>
-        <Header />
+        <Header 
+        onIntroClick={handleScrollToIntro}
+        onSkillClick={handleScrollToSkill}
+        onPortfolioClick={handleScrollToPortfolio}
+        onSelfstudyClick={handleScrollToSelfstudy}
+        onContactClick={handleScrollToContact} 
+        />
         <Main>
-            {showIntro ? <Intro onIntroEnd={handleIntroEnd} /> : null}
-            <Skill />
-            <Portfolio />
-            <Selfstudy />
-            <Contact />
+            <Intro ref={introRef}/>
+            <Skill ref={skillRef}/>
+            <Portfolio ref={portfolioRef} />
+            <Selfstudy ref={selfstudyRef} />
+            <Contact ref={contactRef} />
         </Main>
         <Footer/>
     </>

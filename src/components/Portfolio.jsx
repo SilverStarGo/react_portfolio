@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , forwardRef} from 'react';
 import testjs from '../assets/img/testjs.png';
 
 const skillIconMap = {
@@ -32,11 +32,11 @@ const projects = [
   },
 ];
 
-const Portfolio = () => {
+const Portfolio = forwardRef((props, ref) => {
   const [modalProject, setModalProject] = useState(null);
 
   return (
-    <section className='portfolio_section'>
+    <section className='portfolio_section' ref={ref} id='portfolio'>
       <h2 className='portfolio_section_title'>주요 프로젝트</h2>
       <p className='portfolio_section_subtitle'>카드를 클릭하면 상세 정보를 볼 수 있어요.</p>
 
@@ -85,6 +85,6 @@ const Portfolio = () => {
       )}
     </section>
   );
-};
+});
 
 export default Portfolio;

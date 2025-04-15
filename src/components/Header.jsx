@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({onIntroClick, onSkillClick, 
+  onPortfolioClick, onSelfstudyClick, onContactClick}) => {
   return (
     <header id='header'>
       <div className='header_inner'>
@@ -9,11 +10,11 @@ const Header = () => {
         </div>
         <nav className='header_nav' aria-label='메인 메뉴'>
           <ul>
-            <li><a href='#intro'>intro</a></li>
-            <li><a href='#skill'>skill</a></li>
-            <li><a href='#portfolio'>portfolio</a></li>
-            <li><a href='#selfstudy'>selfstudy</a></li>
-            <li><a href='#contact'>contact</a></li>
+            <li><button onClick={onIntroClick}>intro</button></li>
+            <li><button onClick={onSkillClick}>skill</button></li>
+            <li><button onClick={onPortfolioClick}>portfolio</button></li>
+            <li><button onClick={onSelfstudyClick}>selfstudy</button></li>
+            <li><button onClick={onContactClick}>contact</button></li>
           </ul>
         </nav>
       </div>

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { forwardRef }from 'react'
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div>Contact</div>
+    <section className='contact_section' ref={ref} id='contact'>
+      <h2>저의 연락처입니다</h2>
+      <div>Contact</div>
+    </section>
+
   );
-};
+});
 
 export default Contact;

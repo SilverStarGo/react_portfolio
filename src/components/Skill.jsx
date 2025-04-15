@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import testjs from '../assets/img/testjs.png';
 
 // 카테고리별 기술 스택 데이터
@@ -30,7 +30,7 @@ const skillIcons = {
 
 const allSkills = Object.values(skillIcons).flat();
 
-const skill = () => {
+const skill = forwardRef((props, ref) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -44,7 +44,7 @@ const skill = () => {
   ? allSkills : skillIcons[selectedCategory];
 
   return (
-    <section className='skill_section'>
+    <section className='skill_section' ref={ref} id='skill'>
       <h2 className='section_title'>기술스킬</h2>
       <p className='section_subtitle'>사용할 수 있어요.</p>
 
@@ -69,6 +69,6 @@ const skill = () => {
       </div>
     </section>
   );
-};
+});
 
 export default skill;
