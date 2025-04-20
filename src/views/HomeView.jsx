@@ -54,7 +54,7 @@ const HomeView = () => {
         onSkillClick={handleScrollToSkill}
         onPortfolioClick={handleScrollToPortfolio}
         onSelfstudyClick={handleScrollToSelfstudy}
-        onContactClick={handleScrollToContact} 
+        onContactClick={handleScrollToContact}
         />
         <Main>
             <Intro ref={introRef}/>
