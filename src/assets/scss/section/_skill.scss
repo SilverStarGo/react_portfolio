@@ -1,5 +1,5 @@
 .skill_section {
-    background-color: black;
+    background: #0d1117;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -37,7 +37,7 @@
             }
 
             &:hover {
-                background: rgb(125, 75, 75);
+                background: springgreen;
             }
         }
     }
@@ -45,7 +45,7 @@
     .skill_grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        gap: 15px;
+        gap: 35px;
         max-width: 1000px;
         margin: auto;
         padding: 20px;

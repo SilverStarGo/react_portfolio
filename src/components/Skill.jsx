@@ -1,32 +1,5 @@
 import React, { forwardRef, useState } from 'react';
-import testjs from '../assets/img/testjs.png';
-
-// 카테고리별 기술 스택 데이터
-const skillCategories = [
-  {id: "program1", name: "프로그램1"},
-  {id: "program2", name: "프로그램2"},
-  {id: "program3", name: "프로그램3"},
-];
-
-// 기술 아이콘 데이터
-const skillIcons = {
-  program1: [
-    {id: "skill1", src: testjs, alt: "SKILL1"},
-    {id: "skill2", src: testjs, alt: "SKILL2"},
-    {id: "skill3", src: testjs, alt: "SKILL3"},
-    {id: "skill4", src: testjs, alt: "SKILL4"},
-  ],
-  program2: [
-    {id: "skill5", src: testjs, alt: "SKILL5"},
-    {id: "skill6", src: testjs, alt: "SKILL6"},
-    {id: "skill7", src: testjs, alt: "SKILL7"},
-  ],
-  program3: [
-    {id: "skill8", src: testjs, alt: "SKILL8"},
-    {id: "skill9", src: testjs, alt: "SKILL9"},
-    {id: "skill10", src: testjs, alt: "SKILL10"},
-  ],
-};
+import { skillCategories, skillIcons } from '../data/skilldata.js';
 
 const allSkills = Object.values(skillIcons).flat();
 
@@ -46,7 +19,7 @@ const skill = forwardRef((props, ref) => {
   return (
     <section className='skill_section' ref={ref} id='skill'>
       <h2 className='section_title'>기술스킬</h2>
-      <p className='section_subtitle'>사용할 수 있어요.</p>
+      <p className='section_subtitle'>사용할 수 있는 기술목록입니다.</p>
 
       <div className='category_tabs'>
         {skillCategories.map((category) => (

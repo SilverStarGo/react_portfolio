@@ -1,19 +1,20 @@
 import React, { useState , forwardRef } from 'react';
-import testjs from '../assets/img/testjs.png';
+import css from '../assets/img/css.png';
+import tomcat from '../assets/img/tomcat.png';
 
 const skillIconMap = {
-  skill1: testjs,
-  skill2: testjs,
-  skill3: testjs,
-  skill4: testjs,
-  skill5: testjs,
-  skill6: testjs,
-  skill7: testjs,
-  skill8: testjs,
-  skill9: testjs,
-  skill10: testjs,
-  skill11: testjs,
-  skill12: testjs,
+  skill1: css,
+  skill2: tomcat,
+  skill3: css,
+  skill4: css,
+  skill5: css,
+  skill6: css,
+  skill7: css,
+  skill8: css,
+  skill9: css,
+  skill10: css,
+  skill11: css,
+  skill12: css,
 };
 
 const studys = [

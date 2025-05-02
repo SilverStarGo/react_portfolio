@@ -1,11 +1,11 @@
 import React, { useState , forwardRef} from 'react';
-import testjs from '../assets/img/testjs.png';
+import css from '../assets/img/css.png';
 
 const skillIconMap = {
-  skill1: testjs,
-  skill2: testjs,
-  skill3: testjs,
-  skill4: testjs,
+  skill1: css,
+  skill2: css,
+  skill3: css,
+  skill4: css,
 };
 
 const projects = [
