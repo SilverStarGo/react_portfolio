@@ -12,9 +12,11 @@ const skill = forwardRef((props, ref) => {
     setSelectedCategory(selectedCategory === categoryId ? "all" : categoryId);
   };
 
-  // 선택된 카테고리에 따라 보여줄 기술 리스트 결정
-  const displayedSkills = selectedCategory === "all" 
-  ? allSkills : skillIcons[selectedCategory];
+  // 모든 기술 렌더링 + 보여줄 카테고리 설정
+  const isVisible = (skillId) => {
+    if (selectedCategory === "all") return true;
+    return skillIcons[selectedCategory].some(skill => skill.id === skillId);
+  };
 
   return (
     <section className='skill_section' ref={ref} id='skill'>
@@ -34,9 +36,16 @@ const skill = forwardRef((props, ref) => {
       </div>
 
       <div className='skill_grid'>
-        {displayedSkills && displayedSkills.map((skill) => (
-          <div key={skill.id} className='skill_card'> 
-            <img src={skill.src} alt={skill.alt} />
+        {allSkills.map((skill) => (
+          <div 
+            key={skill.id} 
+            className={`skill_card ${isVisible(skill.id) ? 'visible' : 'hidden'}`}
+          > 
+            <img 
+              src={skill.src} 
+              alt={skill.title || skill.alt} 
+              title={skill.title || skill.alt} 
+            />
           </div>
         ))}
       </div>
