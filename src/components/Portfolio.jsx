@@ -1,36 +1,5 @@
 import React, { useState , forwardRef} from 'react';
-import css from '../assets/img/css.png';
-
-const skillIconMap = {
-  skill1: css,
-  skill2: css,
-  skill3: css,
-  skill4: css,
-};
-
-const projects = [
-  {
-    id: 1,
-    title: '프로젝트명1',
-    description: '간단설명1',
-    skills:['skill1', 'skill2', 'skill3', 'skill4'],
-    bgColor: '#111',
-  },
-  {
-    id: 2,
-    title: '프로젝트명2',
-    description: '간단설명2',
-    skills:['skill1', 'skill2', 'skill3', 'skill4'],
-    bgColor: '#1e1e2f',
-  },
-  {
-    id: 3,
-    title: '프로젝트명3',
-    description: '간단설명3',
-    skills:['skill1', 'skill2', 'skill3', 'skill4'],
-    bgColor: '#111',
-  },
-];
+import { projectData } from '../data/projectdata.js';
 
 const Portfolio = forwardRef((props, ref) => {
   const [modalProject, setModalProject] = useState(null);
@@ -41,20 +10,21 @@ const Portfolio = forwardRef((props, ref) => {
       <p className='portfolio_section_subtitle'>카드를 클릭하면 상세 정보를 볼 수 있어요.</p>
 
       <div className='portfolio_grid'>
-        {projects.map((project) => (
+        {projectData.map((project) => (
           <div
             key={project.id}
             className='project_card'
             style={{ backgroundColor: project.bgColor }}
             onClick={() => setModalProject(project)}
           >
+            <img src={project.thumbnail} alt={project.title} className='projectThumb' />
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <p>{project.shortDesc}</p>
             <div className='skill_icons'>
               {project.skills.map((skill, index) => (
                 <img key={index}
-                src={skillIconMap[skill]}
-                alt={skill}
+                src={skill}
+                alt={`skill-${index}`}
                 className="skill_icon" />
               ))}
             </div>
@@ -68,12 +38,22 @@ const Portfolio = forwardRef((props, ref) => {
           <div className='modal_content' onClick={(e) => e.stopPropagation()}>
             <h3>{modalProject.tilte}</h3>
             <p>{modalProject.description}</p>
+            <div className='modalMeta'>
+              <p><strong>참여인원:</strong> {modalProject.members}</p>
+              <p><strong>기간:</strong> {modalProject.period}</p>
+              <p><strong>관련 링크:</strong> <a href={modalProject.link} target="_blank" rel="noopener noreferrer">바로가기</a></p>
+            </div>
+            <ul className="modalDetails">
+              {modalProject.details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
             <p><strong>사용 기술</strong> 
             <div className='modal_skill_icons'>
               {modalProject.skills.map((skill, index) => (
               <img key={index}
-              src={skillIconMap[skill]}
-              alt={skill}
+              src={skill}
+              alt={`skill-${index}`}
               className='modal_skill_icon'
               />
             ))}
