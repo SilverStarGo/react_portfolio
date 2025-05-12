@@ -18,11 +18,11 @@ const Header = ({onIntroClick, onSkillClick,
         </div>
         <nav className='header_nav' aria-label='메인 메뉴'>
           <ul>
-            <li><button className={activeTab === 'intro' ? 'active' : ''}onClick={onIntroClick}>intro</button></li>
-            <li><button className={activeTab === 'skill' ? 'active' : ''}onClick={onSkillClick}>skill</button></li>
-            <li><button className={activeTab === 'portfolio' ? 'active' : ''}onClick={onPortfolioClick}>portfolio</button></li>
-            <li><button className={activeTab === 'selfstudy' ? 'active' : ''}onClick={onSelfstudyClick}>selfstudy</button></li>
-            <li><button className={activeTab === 'contact' ? 'active' : ''}onClick={onContactClick}>contact</button></li>
+            <li><button className={activeTab === 'intro' ? 'active' : ''}onClick={() => handleClick('intro', onIntroClick)}>intro</button></li>
+            <li><button className={activeTab === 'skill' ? 'active' : ''}onClick={() => handleClick('skill', onSkillClick)}>skill</button></li>
+            <li><button className={activeTab === 'portfolio' ? 'active' : ''}onClick={() => handleClick('portfolio', onPortfolioClick)}>portfolio</button></li>
+            <li><button className={activeTab === 'selfstudy' ? 'active' : ''}onClick={() => handleClick('selfstudy', onSelfstudyClick)}>selfstudy</button></li>
+            <li><button className={activeTab === 'contact' ? 'active' : ''}onClick={() => handleClick('contact', onContactClick)}>contact</button></li>
           </ul>
         </nav>
       </div>
