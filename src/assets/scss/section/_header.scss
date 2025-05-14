@@ -23,12 +23,6 @@
     }
 }
 
-
-
-// .header_nav li {
-//     display: inline-block;
-// }
-
 .header_nav button {
     background: rgba(255, 255, 255, 0.08);
     color: white;
@@ -38,13 +32,13 @@
     padding: 8px 18px;
     font-size: 20px;
     cursor: pointer;
-    // transition: all 0.3s ease;
-    // backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .header_nav button:hover {
-    // background: rgba(255, 255, 255, 0.2);
-    // color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
