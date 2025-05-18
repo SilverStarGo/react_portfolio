@@ -1,32 +1,43 @@
 #header {
     position: fixed;
     top: 0;
-    width: auto;
-    z-index: 10000;
-    padding-top: 30px;
     right: 0;
+    width: 100%;
+    z-index: 10000;
 
     .header_logo {
+        position: fixed;
+        left: 30px;
 
         a {
-            position: fixed;
-            left: 0;
-            margin-left: 20px;
-        };
+            font-family: 'Spoqa Han Sans Neo', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #2E3A4E;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #9FD8F9;
+        }
     }
 
-    .header_nav ul {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    
+    .header_nav {
+        justify-items: center;
+
+        ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
     }
 }
 
 .header_nav button {
     background: rgba(255, 255, 255, 0.08);
-    color: white;
-    font-weight: 500;
+    color: #333;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
     padding: 8px 18px;
@@ -44,8 +55,7 @@
 }
 
 .header_nav .active {
-    background: #81f495;
+    background: #465A78;
     color: black;
-    font-weight: bold;
-    border-color: #81f495;
+    border-color: #9FD8F9;
 }

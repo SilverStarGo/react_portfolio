@@ -23,20 +23,20 @@ const studys = [
     title: '학습1',
     description: '간단설명1',
     skills:['skill1', 'skill2', 'skill3', 'skill4'],
-    bgColor: '#1e1e2f',
+    bgColor: '#2D3548',
   },
   {
     id: 2,
     title: '학습2',
     description: '간단설명2',
     skills:['skill5', 'skill6', 'skill7', 'skill8'],
-    bgColor: '#111',
+    bgColor: '#2D3548',
   },  {
     id: 3,
     title: '학습3',
     description: '간단설명3',
     skills:['skill9', 'skill10', 'skill11', 'skill12'],
-    bgColor: '#1e1e2f',
+    bgColor: '#2D3548',
   },
 ];
 

@@ -1,12 +1,12 @@
 .selfstudy_section {
-    background: #F9F9F9;
-    color: white;
+    background: #2E3A4E;
+    color: #fff;
     text-align: center;
     padding: 120px 20px;
 
     .selfstudy_section_title {
         font-size: 32px;
-        color: springgreen;
+        color: #9FD8F9;
     }
 
     .selfstudy_section_subtitle {
@@ -25,7 +25,6 @@
     .study_card {
         padding: 20px;
         border-radius: 16px;
-        // color: white;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
         text-align: left;
@@ -49,7 +48,6 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            // margin-top: 8px;
 
             .skill_icon {
                 width: 28px;
@@ -76,12 +74,13 @@
     z-index: 1000;
 
     .modal_content {
-        background: #1a1a1a;
+        background: #2E3A4E;
         padding: 30px;
         border-radius: 12px;
         max-width: 500px;
         width: 90%;
         text-align: left;
+        color: #fff;
 
         h3 {
             margin-top: 20px;
@@ -92,12 +91,12 @@
             padding: 8px;
             border: none;
             border-radius: 8px;
-            background: springgreen;
+            background: #fff;
             color: black;
             cursor: pointer;
 
             &:hover {
-                background: limegreen;
+                background: #aeb5d6;
             }
         }
 

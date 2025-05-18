@@ -1,6 +1,9 @@
 /* CSS 코드를 모듈화하고 스타일 시트를 섹션별로 분리하여 관리. (코드의 가독성과 유지보수성을 높여줌) */
 
 @charset "UTF-8";
+html {
+    background: #6182AB;
+}
 
 /* setting */
 @import "setting/fonts";

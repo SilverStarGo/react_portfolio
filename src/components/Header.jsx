@@ -14,7 +14,7 @@ const Header = ({onIntroClick, onSkillClick,
     <header id='header'>
       <div className='header_inner'>
         <div className='header_logo'>
-          <a href='/'>portfolio</a>
+          <a href='/'>JES</a>
         </div>
         <nav className='header_nav' aria-label='메인 메뉴'>
           <ul>
