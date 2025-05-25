@@ -61,7 +61,7 @@
     }
 }
 
-.modal_overlay {
+.smodal_overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +73,7 @@
     justify-content: center;
     z-index: 1000;
 
-    .modal_content {
+    .smodal_content {
         background: #2E3A4E;
         padding: 30px;
         border-radius: 12px;
@@ -100,13 +100,13 @@
             }
         }
 
-        .modal_skill_icons {
+        .smodal_skill_icons {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             margin-top: 8px;
 
-            .modal_skill_icon {
+            .smodal_skill_icon {
                 width: 28px;
                 height: 28px;
                 object-fit: contain;
