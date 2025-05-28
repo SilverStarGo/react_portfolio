@@ -37,46 +37,66 @@ export const projectData = [
     members: "5명",
     description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
     details: [
-      "머시기의 일정",
-      "데이터연동",
-      "회원정보 보안 ",
-      "Github 기반 협업 환경 운영 및 코드 리뷰",
+      { dtitle: "간단한 설명부분", 
+        desc: ["세부적인 설명부분", "내부적인 설명부분"],
+        dimage: css,
+      },
+      
     ],
-    // exImages: ['/images/project.png'],
     exImages: [css, html],
 },
 {
     id: 2,
     title: "Tomcat 및 Springboot 기반 웹사이트 개발",
-    thumbnail: html,        
-    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], 
-    shortDesc: "가구 쇼핑몰 제작", 
-    period: "2023.08.01~2023.08.16",
+    thumbnail: html,        // 카드 썸네일
+    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], // 기술 스킬
+    shortDesc: "가구 쇼핑몰 제작", // 카드용 요약 설명
+    period: "2023.06.16~2023.07.03",
     members: "5명",
-    link: "http",
-    description: "스프링 프레임워크 프로젝트",
+    description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
     details: [
-      "머시기의 일정",
-      "데이터연동",
-      "회원정보 보안 ",
-      "Github 기반 협업 환경 운영 및 코드 리뷰",
-    ]    
+      { dtitle: "간단한 설명부분", 
+        desc: ["세부적인 설명부분", "내부적인 설명부분"],
+        dimage: css,
+      },
+      
+    ],
+    exImages: [css, html],
 },
 {
     id: 3,
     title: "Tomcat 및 Springboot 기반 웹사이트 개발",
-    thumbnail: html,        
-    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], 
-    shortDesc: "가구 쇼핑몰 제작", 
-    period: "2023.09.18~2023.10.16",
+    thumbnail: html,        // 카드 썸네일
+    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], // 기술 스킬
+    shortDesc: "가구 쇼핑몰 제작", // 카드용 요약 설명
+    period: "2023.06.16~2023.07.03",
     members: "5명",
-    link: "http",
-    description: "스프링 프레임워크 프로젝트",
+    description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
     details: [
-      "머시기의 일정",
-      "데이터연동",
-      "회원정보 보안 ",
-      "Github 기반 협업 환경 운영 및 코드 리뷰",
-    ]    
+      { dtitle: "간단한 설명부분", 
+        desc: ["세부적인 설명부분", "내부적인 설명부분"],
+        dimage: css,
+      },
+      
+    ],
+    exImages: [css, html],
+},
+{
+    id: 4,
+    title: "Tomcat 및 Springboot 기반 웹사이트 개발",
+    thumbnail: html,        // 카드 썸네일
+    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], // 기술 스킬
+    shortDesc: "가구 쇼핑몰 제작", // 카드용 요약 설명
+    period: "2023.06.16~2023.07.03",
+    members: "5명",
+    description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
+    details: [
+      { dtitle: "간단한 설명부분", 
+        desc: ["세부적인 설명부분", "내부적인 설명부분"],
+        dimage: css,
+      },
+      
+    ],
+    exImages: [css, html],
 },
 ]

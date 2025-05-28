@@ -5,14 +5,6 @@ import { projectData } from '../data/projectdata.js';
 const Portfolio = forwardRef((props, ref) => {
   const [modalProject, setModalProject] = useState(null);
   
-  // 모달 시 스크롤 잠금
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-  
   return (
     <section className='portfolio_section' ref={ref} id='portfolio'>
       <h2 className='portfolio_section_title'>프로젝트 상세보기</h2>
@@ -49,8 +41,8 @@ const Portfolio = forwardRef((props, ref) => {
             <h4>프로젝트 설명</h4>
             <p>{modalProject.description}</p>
             <div className='modalMeta'>
-              <p><strong>참여인원:</strong> {modalProject.members}</p>
-              <p><strong>기간:</strong> {modalProject.period}</p>
+              <p><strong>👭 참여인원:</strong> {modalProject.members}</p>
+              <p><strong>📆 기간:</strong> {modalProject.period}</p>
             </div>
             <p><strong>기술스택</strong></p>
 
@@ -73,11 +65,29 @@ const Portfolio = forwardRef((props, ref) => {
                 />
               ))}
             </div>
-            <ul className="modalDetails">
+            <ol className="modal_details">
               {modalProject.details.map((detail, index) => (
-                <li key={index}>{detail}</li>
+                <li key={index}>
+                  <strong>{detail.dtitle}</strong>
+                  {detail.desc && (
+                    <ul>
+                      {(Array.isArray(detail.desc) ? detail.desc : [detail.desc]).map((d, index) => (
+                        <li key={index}>{d}</li>
+                      ))}
+                    </ul>
+                  )} 
+
+                    {/* 이미지가 첨부되었을때만 출력 */}
+                    {detail.dimage && (
+                      <img 
+                        src={detail.dimage}
+                        alt={`detail-${index}`}
+                        className='dimages'
+                      />
+                    )}
+                </li>
               ))}
-            </ul>
+            </ol>
             <button onClick={() => setModalProject(null)}>닫기</button>
           </div>
         </div>

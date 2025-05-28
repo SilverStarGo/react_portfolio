@@ -132,7 +132,20 @@
         }
 
         .modal_exImages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            justify-items: center;
+            gap: 20px;
             margin-top: 24px;
+
+            .modal_exImage {
+                width: 100px;
+            }
+        }
+
+        .dimages {
+            margin-top: 2rem;
+            width: 160px;
         }
     }
 }
