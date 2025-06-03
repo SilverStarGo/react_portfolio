@@ -40,10 +40,6 @@ const Portfolio = forwardRef((props, ref) => {
             <h2>{modalProject.title}</h2>
             <h4>프로젝트 설명</h4>
             <p>{modalProject.description}</p>
-            <div className='modalMeta'>
-              <p><strong>👭 참여인원:</strong> {modalProject.members}</p>
-              <p><strong>📆 기간:</strong> {modalProject.period}</p>
-            </div>
             <p><strong>기술스택</strong></p>
 
             <div className='modal_skill_icons'>
@@ -55,6 +51,10 @@ const Portfolio = forwardRef((props, ref) => {
                 />
               ))}
             </div>
+            <div className='modalMeta'>
+              <p><strong>👭 참여인원:</strong> {modalProject.members}</p>
+              <p><strong>📆 기간:</strong> {modalProject.period}</p>
+            </div>
             <div className='modal_exImages'>
               {/* 이미지 부분 */}
               {modalProject.exImages.map((image, index) => (
@@ -65,26 +65,27 @@ const Portfolio = forwardRef((props, ref) => {
                 />
               ))}
             </div>
+            <h3>상세내용</h3>
             <ol className="modal_details">
               {modalProject.details.map((detail, index) => (
                 <li key={index}>
                   <strong>{detail.dtitle}</strong>
                   {detail.desc && (
-                    <ul>
+                    <ul className='modal_descs'>
                       {(Array.isArray(detail.desc) ? detail.desc : [detail.desc]).map((d, index) => (
                         <li key={index}>{d}</li>
                       ))}
                     </ul>
                   )} 
 
-                    {/* 이미지가 첨부되었을때만 출력 */}
-                    {detail.dimage && (
-                      <img 
-                        src={detail.dimage}
-                        alt={`detail-${index}`}
-                        className='dimages'
-                      />
-                    )}
+                  {/* 이미지가 첨부되었을때만 출력 */}
+                  {detail.dimage && (
+                    <img 
+                      src={detail.dimage}
+                      alt={`detail-${index}`}
+                      className='dimages'
+                    />
+                  )}
                 </li>
               ))}
             </ol>

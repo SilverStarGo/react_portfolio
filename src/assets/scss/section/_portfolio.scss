@@ -68,6 +68,7 @@
                 height: 140px;
                 object-fit: cover;
                 border-radius: 8px;
+                margin-top: 12px;
               }
         }
     }
@@ -87,7 +88,7 @@
     z-index: 999;
 
     .modal_content {
-        background: #1a1a1a;
+        background: #2E3A4E;
         padding: 30px;
         border-radius: 12px;
         max-width: 700px;
@@ -106,12 +107,12 @@
             padding: 8px;
             border: none;
             border-radius: 8px;
-            background: springgreen;
+            background: #EDF3FA;
             color: black;
             cursor: pointer;
 
             &:hover {
-                background: limegreen;
+                background: #d2e5f8;
             }
         }
 
@@ -133,19 +134,31 @@
 
         .modal_exImages {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             justify-items: center;
             gap: 20px;
             margin-top: 24px;
+            margin-bottom: 40px;
 
             .modal_exImage {
-                width: 100px;
+                width: 100%;
+                height: 240px;
             }
         }
 
         .dimages {
-            margin-top: 2rem;
-            width: 160px;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        .modal_details {
+            margin-top: 30px;
+            padding: 20px;
+
+            .modal_descs {
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 }
