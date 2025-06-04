@@ -55,6 +55,32 @@ const Portfolio = forwardRef((props, ref) => {
               <p><strong>👭 참여인원:</strong> {modalProject.members}</p>
               <p><strong>📆 기간:</strong> {modalProject.period}</p>
             </div>
+            <div className='linkButtons'>
+              {/* 모달안에 링크 달기 */}
+              {modalProject.link && (
+                <a
+                  href={modalProject.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='linkButton'
+                >
+                   🔗 사이트 바로가기
+                </a>
+              )}
+              {/* 모달안에 깃허브 주소 달기 */}
+              {modalProject.github && (
+                <a
+                  href={modalProject.github}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='linkButton'
+                >
+                   💻 GitHub 저장소
+                </a>
+              )}
+            </div>
+
+            <h3>VIEW</h3>
             <div className='modal_exImages'>
               {/* 이미지 부분 */}
               {modalProject.exImages.map((image, index) => (

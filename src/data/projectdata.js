@@ -36,6 +36,13 @@ import diagram1 from "../assets/img/1diagram.png";
 import main1 from "../assets/img/1main.png";
 import cart1 from "../assets/img/1cart.png";
 import board1 from "../assets/img/1board.png";
+import home2 from "../assets/img/2home.PNG";
+import main2 from "../assets/img/2main.PNG";
+import detail2 from "../assets/img/2detail.PNG";
+import search2 from "../assets/img/2search.PNG";
+import set2 from "../assets/img/2set.PNG";
+import review2 from "../assets/img/2review.PNG";
+import user2 from "../assets/img/2user.PNG";
 
 export const projectData = [
 {
@@ -47,6 +54,7 @@ export const projectData = [
     period: "2023.06.16~2023.07.03",
     members: "5명",
     description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
+    github: "https://github.com/SilverStarGo",
     details: [
       { dtitle: "DB를 통한 데이터 관리", 
         desc: [
@@ -100,21 +108,53 @@ export const projectData = [
 },
 {
     id: 2,
-    title: "Tomcat 및 Springboot 기반 웹사이트 개발",
-    thumbnail: html,        // 카드 썸네일
-    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], // 기술 스킬
-    shortDesc: "가구 쇼핑몰 제작", // 카드용 요약 설명
-    period: "2023.06.16~2023.07.03",
-    members: "5명",
-    description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
+    title: "Kotlin 기반으로 AndroidStudio 앱 개발",
+    thumbnail: home2,
+    skills: [kotlin, github, jpa, spring, android, intellij, mysql, firebase],
+    shortDesc: "맛집들을 추천해 주고 맛집정보를 공유하는 앱",
+    period: "2023.07.26~2023.08.16",
+    members: "3명",
+    description: "만족할 만한 식당을 찾기가 쉽지 않을 때 맛집들을 추천해 주고 쉽게 공유할 수 있는 맛집 정보제공",
     details: [
-      { dtitle: "간단한 설명부분", 
-        desc: ["세부적인 설명부분", "내부적인 설명부분"],
-        dimage: css,
+      { dtitle: "맛집 TOP5", 
+        desc: [
+          "서버에 데이터 요청 후 어댑터를 이용해 리사이클러뷰 저장", 
+          "리사이클러뷰 activity에 데이터 바인딩",
+          "이미지는 어댑터에서 글라이드 사용해 비트맵 형식으로 바인딩",
+        ],
+        dimage: main2,
+      },
+      { dtitle: "맛집 상세보기 페이지", 
+        desc: [
+          "조건문을 이용하여 별점이 나타날 수 있도록 출력", 
+          "관리자 로그인 시에만 맛집에 대한 정보를 등록하거나 수정, 삭제 가능",
+          "맛집 장소는 인텐트로 담아서 보낸 위도, 경도 값으로 표시",
+        ],
+        dimage: detail2,
+      },
+      { dtitle: "식당 등록 및 수정", 
+        desc: [
+          "식당에 관한 모든 항목 수정가능", 
+          "이미지 변경이 있을 시 파이어베이스 스토리지에 저장된 사진 삭제처리 후 변경",
+        ],
+        dimage: set2,
+      },
+      { dtitle: "사진첨부 + 별점을 활용한 리뷰", 
+        desc: [
+          "리뷰 작성 시 작성한 시간을 기록",
+        ],
+        dimage: review2,
+      },
+      { dtitle: "회원가입 및 로그인 기능", 
+        desc: [
+          "이메일을 통해 가입처리. 이때, 중복 데이터 확인",
+          "이메일로 유저를 구분하기 때문에 아이디는 변경불가"
+        ],
+        dimage: user2,
       },
       
     ],
-    exImages: [css, html],
+    exImages: [main2, search2],
 },
 {
     id: 3,

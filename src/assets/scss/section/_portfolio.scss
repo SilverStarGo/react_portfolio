@@ -34,7 +34,7 @@
     
             &:hover {
                 transform: scale(1.05);
-                box-shadow: 0 10px 20px rgba(0, 255, 128, 0.2);
+                box-shadow: 0 10px 20px #6182AB;
             }
     
             h3 {
@@ -132,6 +132,30 @@
             }
         }
 
+        .modalMeta {
+            margin-bottom: 70px;
+        }
+
+        .linkButtons {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+
+            .linkButton {
+                background-color: #EDF3FA;
+                color: #333;
+                padding: 0.4rem 0.75rem;
+                border-radius: 0.5rem;
+                font-size: 0.875rem;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #d2e5f8;
+                }
+            }
+        }
+
         .modal_exImages {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -143,6 +167,7 @@
             .modal_exImage {
                 width: 100%;
                 height: 240px;
+                margin-bottom: 40px;
             }
         }
 
@@ -152,7 +177,6 @@
         }
 
         .modal_details {
-            margin-top: 30px;
             padding: 20px;
 
             .modal_descs {
