@@ -43,6 +43,14 @@ import search2 from "../assets/img/2search.PNG";
 import set2 from "../assets/img/2set.PNG";
 import review2 from "../assets/img/2review.PNG";
 import user2 from "../assets/img/2user.PNG";
+import home3 from "../assets/img/3home.png";
+import tableau from "../assets/img/tableau.PNG";
+import python from "../assets/img/python.png";
+import model3 from "../assets/img/3model.PNG";
+import springdash3 from "../assets/img/3springdash.PNG";
+import reactdash3 from "../assets/img/3reactdash.png";
+import springhome3 from "../assets/img/3springdashmain.png";
+import reacthome3 from "../assets/img/3reactdashmain.png";
 
 export const projectData = [
 {
@@ -101,8 +109,7 @@ export const projectData = [
           "게시물에 대한 댓글을 작성하면 작성자, 작성 시간 기록"
         ],
         dimage: board1,
-      }      
-      
+      },
     ],
     exImages: [hot1, top1, community1, main1],
 },
@@ -152,34 +159,54 @@ export const projectData = [
         ],
         dimage: user2,
       },
-      
+      { dtitle: "앱 아이콘 디자인",
+        desc: [
+          "일러스트를 활용하여 직접 캐릭터 및 앱명을 제작"
+        ],
+        dimage: home2,
+      },
     ],
     exImages: [main2, search2],
 },
 {
     id: 3,
-    title: "Tomcat 및 Springboot 기반 웹사이트 개발",
-    thumbnail: html,        // 카드 썸네일
-    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], // 기술 스킬
-    shortDesc: "가구 쇼핑몰 제작", // 카드용 요약 설명
-    period: "2023.06.16~2023.07.03",
-    members: "5명",
-    description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
+    title: "머닝러신을 활용한 빅데이터 프로젝트",
+    thumbnail: home3,
+    skills: [tableau, github, python, react, spring],
+    shortDesc: "112 신고 데이터 기반 범죄 안전도 예측",
+    period: "2023.09.18~2023.10.23",
+    members: "4명",
+    description: "서울전역 위험도를 측정하고 가설을 설립하여 그에 따른 범죄위험도와 연관이 있는지 비교하기 위한 프로젝트",
     details: [
-      { dtitle: "간단한 설명부분", 
-        desc: ["세부적인 설명부분", "내부적인 설명부분"],
-        dimage: css,
+      { dtitle: "데이터 수집 및 전처리", 
+        desc: [
+          "데이터 전처리 및 가공",
+          "Polygon 위도, 경도를 네이버 역지오코딩 API를 활용해 행정동 추출"
+        ],
       },
-      
+      { dtitle: "데이터 분석 및 훈련된 모델로 산출된 예측치",
+        desc: [
+          "타겟 지역구 선정하여 5대 범죄에 대한 1년간 신고 데이터의 평균치와 최대치인 지구대를 비교",
+          "선형회귀분석을 활용하여 데이터 간의 가중치를 찾아 독립변수와 종속변수간의 선형 관계를 알아냄",
+          "선형회귀 모델 SGD를 적용 후 훈련된 모델에 훈련 데이터를 다시 대입하여 선형 회귀 분석이 잘 되었는지 검증"
+        ],
+        dimage: model3,
+      },
+      { dtitle:"스프링을 활용한 웹 대시보드 구현",
+        dimage: springdash3
+      },
+      { dtitle:"리액트를 활용한 웹 대시보드 구현",
+        dimage: reactdash3
+      },      
     ],
-    exImages: [css, html],
+    exImages: [springhome3, reacthome3],
 },
 {
     id: 4,
     title: "Tomcat 및 Springboot 기반 웹사이트 개발",
-    thumbnail: html,        // 카드 썸네일
-    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery], // 기술 스킬
-    shortDesc: "가구 쇼핑몰 제작", // 카드용 요약 설명
+    thumbnail: html,
+    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery],
+    shortDesc: "가구 쇼핑몰 제작",
     period: "2023.06.16~2023.07.03",
     members: "5명",
     description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",

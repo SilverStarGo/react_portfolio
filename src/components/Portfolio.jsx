@@ -19,7 +19,7 @@ const Portfolio = forwardRef((props, ref) => {
             onClick={() => setModalProject(project)}
           >
             <img src={project.thumbnail} alt={project.title} className='projectThumb' />
-            <h3>{project.title}</h3>
+            <h4>{project.title}</h4>
             <p>{project.shortDesc}</p>
             <div className='skill_icons'>
               {project.skills.map((skill, index) => (
@@ -80,6 +80,7 @@ const Portfolio = forwardRef((props, ref) => {
               )}
             </div>
 
+            <hr className='section_divider' />
             <h3>VIEW</h3>
             <div className='modal_exImages'>
               {/* 이미지 부분 */}
@@ -95,7 +96,9 @@ const Portfolio = forwardRef((props, ref) => {
             <ol className="modal_details">
               {modalProject.details.map((detail, index) => (
                 <li key={index}>
-                  <strong>{detail.dtitle}</strong>
+                  <div className='dtitles'>
+                    <strong>{detail.dtitle}</strong>
+                  </div>
                   {detail.desc && (
                     <ul className='modal_descs'>
                       {(Array.isArray(detail.desc) ? detail.desc : [detail.desc]).map((d, index) => (

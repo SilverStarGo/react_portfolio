@@ -52,6 +52,7 @@
                 flex-wrap: wrap;
                 gap: 8px;
                 margin-top: 8px;
+                justify-content: center;
     
                 .skill_icon {
                     width: 28px;
@@ -156,6 +157,13 @@
             }
         }
 
+        .section_divider {
+            border: none;
+            border-top: 2px solid #ccc;
+            margin: 40px 0 20px;
+            width: 100%;
+        }
+
         .modal_exImages {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -172,16 +180,20 @@
         }
 
         .dimages {
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
+            margin-top: 3rem;
             width: 100%;
         }
 
         .modal_details {
-            padding: 20px;
+            transform: translateX(-20px);
+
+            .dtitles {
+                margin-top: 3rem;
+            }
 
             .modal_descs {
                 margin-top: 1rem;
-                margin-bottom: 2rem;
             }
         }
     }
