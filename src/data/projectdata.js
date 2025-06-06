@@ -201,22 +201,4 @@ export const projectData = [
     ],
     exImages: [springhome3, reacthome3],
 },
-{
-    id: 4,
-    title: "Tomcat 및 Springboot 기반 웹사이트 개발",
-    thumbnail: html,
-    skills: [tomcat, intellij, css, js, html, spring, bootstrap, java, jquery],
-    shortDesc: "가구 쇼핑몰 제작",
-    period: "2023.06.16~2023.07.03",
-    members: "5명",
-    description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
-    details: [
-      { dtitle: "간단한 설명부분", 
-        desc: ["세부적인 설명부분", "내부적인 설명부분"],
-        dimage: css,
-      },
-      
-    ],
-    exImages: [css, html],
-},
 ]
