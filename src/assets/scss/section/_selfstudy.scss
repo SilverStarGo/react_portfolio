@@ -1,17 +1,18 @@
 .selfstudy_section {
-    background: #2E3A4E;
-    color: #fff;
+    background: #EDF3FA;
+    color: #2E3A4E;
     text-align: center;
     padding: 120px 20px;
 
     .selfstudy_section_title {
         font-size: 32px;
-        color: #9FD8F9;
+        color: #2E3A4E;
     }
 
     .selfstudy_section_subtitle {
         font-size: 18px;
         margin-bottom: 40px;
+        color: #2E3A4E;
     }
 
     .selfstudy_grid {
@@ -28,10 +29,11 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
         text-align: left;
+        background-color: #fff;
 
         &:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 255, 128, 0.2);
+            box-shadow: 0 10px 20px #6182AB;
         }
 
         h3 {

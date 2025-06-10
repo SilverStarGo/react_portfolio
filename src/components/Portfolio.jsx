@@ -1,4 +1,4 @@
-import React, { useState, forwardRef, useEffect} from 'react';
+import React, { useState, forwardRef } from 'react';
 import { projectData } from '../data/projectdata.js';
 
 
@@ -8,7 +8,7 @@ const Portfolio = forwardRef((props, ref) => {
   return (
     <section className='portfolio_section' ref={ref} id='portfolio'>
       <h2 className='portfolio_section_title'>프로젝트 상세보기</h2>
-      <p className='portfolio_section_subtitle'>주요 프로젝트의 세부 내용을 확인해보세요</p>
+      <p className='portfolio_section_subtitle'>팀 프로젝트의 세부 내용을 확인할 수 있어요.</p>
 
       <div className='portfolio_grid'>
         {projectData.map((project) => (

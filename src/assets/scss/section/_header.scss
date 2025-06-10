@@ -13,7 +13,7 @@
             font-family: 'Spoqa Han Sans Neo', sans-serif;
             font-size: 24px;
             font-weight: 700;
-            color: #2E3A4E;
+            color: #ccc;
             text-decoration: none;
             letter-spacing: 1px;
             transition: color 0.3s ease;
@@ -37,7 +37,7 @@
 
 .header_nav button {
     background: rgba(255, 255, 255, 0.08);
-    color: #333;
+    color: #ccc;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
     padding: 8px 18px;
@@ -45,11 +45,12 @@
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    text-transform: uppercase;
 }
 
 .header_nav button:hover {
     background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: #333;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }

@@ -5,7 +5,7 @@
     padding: 50px 20px;
 
     .section_title {
-        color: yellowgreen;
+        color: #333;
         font-size: 40px;
     }
 
@@ -21,23 +21,23 @@
         margin-bottom: 20px;
 
         .tab {
-            background: #1a1f26;
+            background: #2E3A4E;
             border: none;
             padding: 10px 20px;
             border-radius: 15px;
-            color: white;
+            color: #EDF3FA;
             cursor: pointer;
             font-size: 14px;
             transition: 0.3s ease-in-out;
 
             &.active {
-                background: white;
-                color: aquamarine;
+                background: #ccc;
+                color: #6182AB;
                 font-weight: bold;
             }
 
             &:hover {
-                background: springgreen;
+                background: #9FD8F9;
             }
 
         }

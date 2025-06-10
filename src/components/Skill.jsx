@@ -21,7 +21,7 @@ const skill = forwardRef((props, ref) => {
   return (
     <section className='skill_section' ref={ref} id='skill'>
       <h2 className='section_title'>기술스킬</h2>
-      <p className='section_subtitle'>사용할 수 있는 기술목록입니다.</p>
+      <p className='section_subtitle'>학습과 프로젝트를 통해 익혀온 기술들로, 앞으로도 꾸준히 성장해 나가겠습니다.</p>
 
       <div className='category_tabs'>
         {skillCategories.map((category) => (
