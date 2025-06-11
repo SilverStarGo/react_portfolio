@@ -1,15 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Header = ({onIntroClick, onSkillClick, 
   onPortfolioClick, onSelfstudyClick, onContactClick}) => {
 
-  const [activeTab, setActiveTab] = React.useState('intro');
+  const [activeTab, setActiveTab] = useState('intro');
 
   const handleClick = (section, callback) => {
     setActiveTab(section);
     callback();
-  }
+  };
 
+  // useEffect로 스크롤 이벤트 감지 추가
+  useEffect(() => {
+    const sectionIds = ['intro', 'skill', 'portfolio', 'selfstudy', 'contact'];
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const offsets = sectionIds.map(id => {
+        const el = document.getElementById(id);
+        return {
+          id,
+          offset: el ? el.offsetTop - window.innerHeight / 3 : 0,
+        };
+      });
+
+      const current = offsets
+        .filter(({ offset }) => scrollY >= offset)
+        .pop();
+
+      if (current && current.id !== activeTab) {
+        setActiveTab(current.id);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [activeTab]);
+  //
+  
   return (
     <header id='header'>
       <div className='header_inner'>
