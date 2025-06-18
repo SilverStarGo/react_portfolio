@@ -1,19 +1,15 @@
 #header {
-    position: fixed;
-    top: 0;
-    right: 0;
     width: 100%;
-    z-index: 10000;
-
-    .header_logo {
-        position: fixed;
-        left: 30px;
+    
+    .header_logo_wrapper {
+        padding: 1rem 2rem;
+        background-color: #6182AB;
 
         a {
             font-family: 'Spoqa Han Sans Neo', sans-serif;
-            font-size: 24px;
+            font-size: 4rem;
             font-weight: 700;
-            color: #ccc;
+            color: #EDF3FA;
             text-decoration: none;
             letter-spacing: 1px;
             transition: color 0.3s ease;
@@ -25,12 +21,31 @@
     }
 
     .header_nav {
-        justify-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        
+        display: flex;
+        justify-content: center;
 
         ul {
             display: flex;
             gap: 10px;
             list-style: none;
+            padding: 0; // navbar 버튼을 감싸는 wrap 앞 공백 없애기
+            margin: 0; // navbar 버튼을 감싸는 wrap 위아래 공백 없애기
+        }
+
+        .nav_wrapper {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 45px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // 그림자 효과
+            backdrop-filter: blur(10px); // 유리 느낌
+            margin-top: 2rem;
         }
     }
 }
@@ -50,13 +65,13 @@
 
 .header_nav button:hover {
     background: rgba(255, 255, 255, 0.2);
-    color: #333;
+    color: #2E3A4E;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header_nav .active {
     background: #465A78;
-    color: black;
+    color: #EDF3FA;
     border-color: #9FD8F9;
 }

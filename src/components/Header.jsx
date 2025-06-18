@@ -40,11 +40,14 @@ const Header = ({onIntroClick, onSkillClick,
   
   return (
     <header id='header'>
-      <div className='header_inner'>
+      <div className='header_logo_wrapper'>
         <div className='header_logo'>
           <a href='/'>JES</a>
         </div>
-        <nav className='header_nav' aria-label='메인 메뉴'>
+      </div>
+      
+      <nav className='header_nav' aria-label='메인 메뉴'>
+        <div className='nav_wrapper'>
           <ul>
             <li><button className={activeTab === 'intro' ? 'active' : ''}onClick={() => handleClick('intro', onIntroClick)}>intro</button></li>
             <li><button className={activeTab === 'skill' ? 'active' : ''}onClick={() => handleClick('skill', onSkillClick)}>skill</button></li>
@@ -52,8 +55,8 @@ const Header = ({onIntroClick, onSkillClick,
             <li><button className={activeTab === 'selfstudy' ? 'active' : ''}onClick={() => handleClick('selfstudy', onSelfstudyClick)}>selfstudy</button></li>
             <li><button className={activeTab === 'contact' ? 'active' : ''}onClick={() => handleClick('contact', onContactClick)}>contact</button></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
   );
 };

@@ -24,7 +24,7 @@ export const selfstudyData = [
     skills: [vuejs, vsc, css, js, html, jquery], // 기술 스킬
     shortDesc: "간단한 사칙연산 및 사용자 테마 적용", // 카드용 요약 설명
     description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
-    github: "https://github.com/SilverStarGo",
+    github: "https://github.com/SilverStarGo/dark-mode-calculator",
     details: [
       { dtitle: "계산기 기능", 
         desc: [
@@ -57,7 +57,7 @@ export const selfstudyData = [
     skills: [vuejs, vsc, css, js, html, jquery],
     shortDesc: "Vue3 기반의 컴포넌트를 사용한 할일 앱 제작",
     description: "할일 등록, 완료, 완수 후 삭제까지 편리하게 사용할 수 있는 기본적인 앱",
-    github: "https://github.com/SilverStarGo",
+    github: "https://github.com/SilverStarGo/todo-app",
     details: [
       { dtitle: "할 일 등록 및 삭제 기능 구현", 
         desc: [
@@ -89,7 +89,7 @@ export const selfstudyData = [
     skills: [vuejs, vsc, css, js, html, jquery],
     shortDesc: "vue.js의 컴포넌트 시스템을 활용한 날씨 정보 앱",
     description: "사용자의 현재 위치에서 실시간 날씨 정보와 시간대별/주간 예보 정보를 제공하도록 제작",
-    github: "https://github.com/SilverStarGo",
+    github: "https://github.com/SilverStarGo/weather-app",
     details: [
       { dtitle: "현재 위치를 기반으로 날씨 정보를 자동 조회", 
         desc: [

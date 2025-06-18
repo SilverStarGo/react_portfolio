@@ -1,10 +1,7 @@
 import android from "../assets/img/android.png";
 import bootstrap from "../assets/img/bootstrap.png";
 import css from "../assets/img/css.png";
-import eclipse from "../assets/img/eclipse.png";
-import figma from "../assets/img/figma.png";
 import firebase from "../assets/img/firebase.png";
-import git from "../assets/img/git.png";
 import github from "../assets/img/github.png";
 import html from "../assets/img/html.png";
 import intellij from "../assets/img/intellij.png";
@@ -13,24 +10,18 @@ import jpa from "../assets/img/jpa.png";
 import jquery from "../assets/img/jquery.png";
 import js from "../assets/img/js.png";
 import kotlin from "../assets/img/kotlin.png";
-import mybatis from "../assets/img/mybatis.png";
 import mysql from "../assets/img/mysql.png";
-import netlify from "../assets/img/netlify.png";
-import nodejs from "../assets/img/nodejs.png";
-import oracle from "../assets/img/oracle.png";
-import photoshop from "../assets/img/photoshop.png";
 import react from "../assets/img/react.png";
-import sass from "../assets/img/sass.png";
 import spring from "../assets/img/spring.png";
 import tomcat from "../assets/img/tomcat.png";
-import vsc from "../assets/img/vsc.png";
-import vuejs from "../assets/img/vuejs.png";
+import tableau from "../assets/img/tableau.PNG";
+import python from "../assets/img/python.png";
+import illustator from "../assets/img/illustrator.png";
 import home1 from "../assets/img/1home.png";
 import hot1 from "../assets/img/1hot.png";
 import top1 from "../assets/img/1top.png";
 import login1 from "../assets/img/1login.png";
 import community1 from "../assets/img/1community.png";
-import search1 from "../assets/img/1search.png";
 import detailpage1 from "../assets/img/1detailpage.png";
 import diagram1 from "../assets/img/1diagram.png";
 import main1 from "../assets/img/1main.png";
@@ -44,8 +35,6 @@ import set2 from "../assets/img/2set.PNG";
 import review2 from "../assets/img/2review.PNG";
 import user2 from "../assets/img/2user.PNG";
 import home3 from "../assets/img/3home.png";
-import tableau from "../assets/img/tableau.PNG";
-import python from "../assets/img/python.png";
 import model3 from "../assets/img/3model.PNG";
 import springdash3 from "../assets/img/3springdash.PNG";
 import reactdash3 from "../assets/img/3reactdash.png";
@@ -62,7 +51,6 @@ export const projectData = [
     period: "2023.06.16~2023.07.03",
     members: "5명",
     description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
-    github: "https://github.com/SilverStarGo",
     details: [
       { dtitle: "DB를 통한 데이터 관리", 
         desc: [
@@ -117,11 +105,12 @@ export const projectData = [
     id: 2,
     title: "Kotlin 기반으로 AndroidStudio 앱 개발",
     thumbnail: home2,
-    skills: [kotlin, github, jpa, spring, android, intellij, mysql, firebase],
+    skills: [kotlin, github, jpa, spring, android, intellij, mysql, firebase, illustator],
     shortDesc: "맛집들을 추천해 주고 맛집정보를 공유하는 앱",
     period: "2023.07.26~2023.08.16",
     members: "3명",
     description: "만족할 만한 식당을 찾기가 쉽지 않을 때 맛집들을 추천해 주고 쉽게 공유할 수 있는 맛집 정보제공",
+    github: "https://github.com/SilverStarGo/Android_Team2_Frontend",
     details: [
       { dtitle: "맛집 TOP5", 
         desc: [
@@ -177,6 +166,7 @@ export const projectData = [
     period: "2023.09.18~2023.10.23",
     members: "4명",
     description: "서울전역 위험도를 측정하고 가설을 설립하여 그에 따른 범죄위험도와 연관이 있는지 비교하기 위한 프로젝트",
+    github: "https://github.com/SilverStarGo/Blue_Eye_Dragon/tree/minjunking",
     details: [
       { dtitle: "데이터 수집 및 전처리", 
         desc: [
