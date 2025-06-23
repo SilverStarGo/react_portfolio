@@ -23,7 +23,7 @@ export const selfstudyData = [
     title: "vue.js를 활용한 계산기 앱 만들기",
     skills: [vuejs, vsc, css, js, html, jquery], // 기술 스킬
     shortDesc: "간단한 사칙연산 및 사용자 테마 적용", // 카드용 요약 설명
-    description: "1인 가구 비중이 증가하는 소형 가구 및 미니멀리즘을 반영한 가구정보 웹 제작",
+    description: "다크모드로 전환 가능한 계산기 앱 제작",
     github: "https://github.com/SilverStarGo/dark-mode-calculator",
     details: [
       { dtitle: "계산기 기능", 

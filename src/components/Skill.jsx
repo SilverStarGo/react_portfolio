@@ -34,21 +34,20 @@ const skill = forwardRef((props, ref) => {
           </button>
         ))}
       </div>
-
-      <div className='skill_grid'>
-        {allSkills.map((skill) => (
-          <div 
+        <div className='skill_grid'>
+          {allSkills.map((skill) => (
+            <div 
             key={skill.id} 
-            className={`skill_card ${isVisible(skill.id) ? 'visible' : 'hidden'}`}
-          > 
-            <img 
-              src={skill.src} 
-              alt={skill.title || skill.alt} 
-              title={skill.title || skill.alt} 
-            />
-          </div>
-        ))}
-      </div>
+            className={`skill_card ${isVisible(skill.id) ? 'visible' : 'dimmed'}`}
+            > 
+              <img 
+                src={skill.src} 
+                alt={skill.title || skill.alt} 
+                title={skill.title || skill.alt} 
+                />
+            </div>
+          ))}
+        </div>
     </section>
   );
 });

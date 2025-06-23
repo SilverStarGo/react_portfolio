@@ -40,11 +40,6 @@ const Header = ({onIntroClick, onSkillClick,
   
   return (
     <header id='header'>
-      <div className='header_logo_wrapper'>
-        <div className='header_logo'>
-          <a href='/'>JES</a>
-        </div>
-      </div>
       
       <nav className='header_nav' aria-label='메인 메뉴'>
         <div className='nav_wrapper'>
