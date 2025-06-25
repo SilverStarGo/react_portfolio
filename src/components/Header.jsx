@@ -36,7 +36,6 @@ const Header = ({onIntroClick, onSkillClick,
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [activeTab]);
-  //
   
   return (
     <header id='header'>

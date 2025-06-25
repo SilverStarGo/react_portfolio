@@ -1,6 +1,6 @@
 import React, { forwardRef, useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 
 
 const Intro = forwardRef((props, ref) => {
@@ -19,7 +19,7 @@ const Intro = forwardRef((props, ref) => {
   const arrowOpacity = scrollY < 100 ? 1 - scrollY / 100 : 0;
 
   return (
-      <section className='intro_content' ref={ref} id='intro'>
+      <section className='intro_section' ref={ref} id='intro'>
         <motion.h1
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,15 +32,19 @@ const Intro = forwardRef((props, ref) => {
           {done ? (
             '직접 만들며 배우는 프론트엔드 개발자 정은성입니다'
           ) : (
-            <Typical 
-              steps={[
-                ' ', 3000,
-                '모르는 것을 두려워하지 않고', 2000,
-                '직접 만들며 배우는 프론트엔드 개발자 정은성입니다', 2000,
-                () => setDone(true) // 애니메이션 끝나면 텍스트로 고정
+            <Typewriter
+              words={[
+                ' ',
+                '모르는 것을 두려워하지 않고',
+                '직접 만들며 배우는 프론트엔드 개발자 정은성입니다',
               ]}
               loop={1}
-              wrapper='span'
+              cursor
+              cursorStyle='|'
+              typeSpeed={70}
+              deleteSpeed={40}
+              delaySpeed={1500}
+              onLoopDone={() => setDone(true)} // 애니메이션 끝나면 텍스트로 고정
             />
           )}
         </h1>

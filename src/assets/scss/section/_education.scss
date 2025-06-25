@@ -1,0 +1,76 @@
+.education_section {
+    background-color: #EDF3FA;
+    padding: 8rem;
+    font-family: 'NanumSquareRound';
+    color: #2E3A4E;
+
+    .edu_section_title {
+        text-align: center;
+        font-size: 32px;
+        color: #2E3A4E;
+        font-weight: bold;
+        margin-bottom: 2.5rem;
+    }
+
+    .edu_list {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .edu_item {
+            display: flex;
+            gap: 2rem;
+            margin-left: 14rem;
+
+            .edu_period {
+                font-size: 1rem;
+                font-weight: 500;
+                text-align: right;
+                padding-top: 1rem;
+            }
+            
+            .edu_info {
+                flex: 1;
+                padding-bottom: 0.5rem;
+                // border-bottom: 1px solid #2E3A4E;
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                h4 {
+                    font-weight: 400;
+                    margin-bottom: 0.75rem;
+                }
+
+                .edu_tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.4rem;
+
+                    .edu_badge {
+                        background-color: #2E3A4E;
+                        color: #EDF3FA;
+                        font-size: 0.75rem;
+                        padding: 0.3rem 0.7rem;
+                        border-radius: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .edu_details {
+                    padding-left: 1rem;
+                    margin: 0;
+
+                    li {
+                        font-size: 0.9rem;
+                        margin-bottom: 0.5rem;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+}
