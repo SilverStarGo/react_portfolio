@@ -1,12 +1,12 @@
 import React from 'react'
-import { educationtimeline } from '../data/educationtimeline.js';
+import { educationtimelineData } from '../data/educationtimelinedata.js';
 
-const education = () => {
+const Education = () => {
   return (
     <section className='education_section'>
         <div className='edu_section_title'>학력 및 교육</div>
         <div className='edu_list'>
-            {educationtimeline.map((item) => (
+            {educationtimelineData.map((item) => (
                 <div key={item.id} className='edu_item'>
                     <div className='edu_period'>{item.year}</div>
                     <div className='edu_info'>
@@ -34,4 +34,4 @@ const education = () => {
   )
 }
 
-export default education
+export default Education

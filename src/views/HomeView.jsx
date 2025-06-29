@@ -7,14 +7,13 @@ import Portfolio from "../components/Portfolio";
 import Selfstudy from "../components/Selfstudy";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Education from "../components/education";
+import Education from "../components/Education";
 
 const HomeView = () => {
     const introRef = useRef(null);
     const skillRef = useRef(null);
     const portfolioRef = useRef(null);
     const selfstudyRef = useRef(null);
-    const contactRef = useRef(null);
 
     const handleScrollToIntro = () => {
         introRef.current?.scrollIntoView({
@@ -41,12 +40,6 @@ const HomeView = () => {
             block: 'start'
         });
     };
-    const handleScrollToContact = () => {
-        contactRef.current?.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    };
 
     return (
     <>
@@ -55,15 +48,14 @@ const HomeView = () => {
         onSkillClick={handleScrollToSkill}
         onPortfolioClick={handleScrollToPortfolio}
         onSelfstudyClick={handleScrollToSelfstudy}
-        onContactClick={handleScrollToContact}
         />
         <Main>
             <Intro ref={introRef}/>
             <Skill ref={skillRef}/>
             <Portfolio ref={portfolioRef} />
             <Selfstudy ref={selfstudyRef} />
-            <Education/>
-            <Contact ref={contactRef} />
+            <Education />
+            <Contact  />
         </Main>
         <Footer/>
     </>

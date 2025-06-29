@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Header = ({onIntroClick, onSkillClick, 
-  onPortfolioClick, onSelfstudyClick, onContactClick}) => {
+  onPortfolioClick, onSelfstudyClick, }) => {
 
   const [activeTab, setActiveTab] = useState('intro');
 
@@ -12,7 +12,7 @@ const Header = ({onIntroClick, onSkillClick,
 
   // useEffect로 스크롤 이벤트 감지 추가
   useEffect(() => {
-    const sectionIds = ['intro', 'skill', 'portfolio', 'selfstudy', 'contact'];
+    const sectionIds = ['intro', 'skill', 'portfolio', 'selfstudy',];
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -47,7 +47,6 @@ const Header = ({onIntroClick, onSkillClick,
             <li><button className={activeTab === 'skill' ? 'active' : ''}onClick={() => handleClick('skill', onSkillClick)}>skill</button></li>
             <li><button className={activeTab === 'portfolio' ? 'active' : ''}onClick={() => handleClick('portfolio', onPortfolioClick)}>portfolio</button></li>
             <li><button className={activeTab === 'selfstudy' ? 'active' : ''}onClick={() => handleClick('selfstudy', onSelfstudyClick)}>selfstudy</button></li>
-            <li><button className={activeTab === 'contact' ? 'active' : ''}onClick={() => handleClick('contact', onContactClick)}>contact</button></li>
           </ul>
         </div>
       </nav>

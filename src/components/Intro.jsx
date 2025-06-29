@@ -1,7 +1,7 @@
 import React, { forwardRef, useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
-
+import bgImage from '../assets/img/pf_bg.jpg';
 
 const Intro = forwardRef((props, ref) => {
 
@@ -20,6 +20,11 @@ const Intro = forwardRef((props, ref) => {
 
   return (
       <section className='intro_section' ref={ref} id='intro'>
+
+        <img
+          src={bgImage} alt='bgIMG' className='bg_img'
+        />
+
         <motion.h1
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,7 +33,7 @@ const Intro = forwardRef((props, ref) => {
           안녕하세요.
         </motion.h1>
 
-        <h1>
+        <div className='intro_title'>
           {done ? (
             '직접 만들며 배우는 프론트엔드 개발자 정은성입니다'
           ) : (
@@ -47,7 +52,7 @@ const Intro = forwardRef((props, ref) => {
               onLoopDone={() => setDone(true)} // 애니메이션 끝나면 텍스트로 고정
             />
           )}
-        </h1>
+        </div>
 
         <div className='intro_text'>
           <p>작은 도전이 모여</p>

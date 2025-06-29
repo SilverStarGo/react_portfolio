@@ -1,5 +1,5 @@
 import React, { useState , forwardRef } from 'react';
-import { selfstudyData } from '../data/selfstudy.js';
+import { selfstudyData } from '../data/selfstudydata.js';
 
 const Selfstudy = forwardRef((props, ref) => {
   const [modalStudy, setModalStudy] = useState(null);
