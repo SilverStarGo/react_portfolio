@@ -4,7 +4,7 @@ import HomeView from "./views/HomeView"
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename='/react_portfolio'>
       <Routes>
         <Route path="/" element={<HomeView />} />
       </Routes>
