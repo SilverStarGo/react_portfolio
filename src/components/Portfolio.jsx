@@ -54,6 +54,12 @@ const Portfolio = forwardRef((props, ref) => {
             <div className='modalMeta'>
               <p><strong>👭 참여인원:</strong> {modalProject.members}</p>
               <p><strong>📆 기간:</strong> {modalProject.period}</p>
+              <h3><strong>🙌 나의역할</strong></h3> 
+              <ul className='roles'>
+                {modalProject.role.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </div>
             <div className='linkButtons'>
               {/* 모달안에 링크 달기 */}
