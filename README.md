@@ -1,7 +1,7 @@
-# ✨ Project Title (프로젝트 이름)
+# ✨ 포트폴리오 웹사이트 제작
 
 > **프로젝트 한 줄 설명**  
-> 예) React 기반 개인 포트폴리오 웹사이트로 GSAP·Framer Motion을 활용한 애니메이션을 구현했습니다.
+> React 기반 개인 포트폴리오 웹사이트입니다.
 
 ---
 
@@ -18,11 +18,11 @@
 ## 🛠 기술 스택 (Tech Stack)
 
 ### **Frontend**
-- React 19  
+- React 
 - Sass  
 - React Router  
 - Framer Motion  
-- GSAP  
+- GSAP(자바스크립트 라이브러리)
 - React Simple Typewriter  
 
 ### **Deployment**
@@ -35,18 +35,19 @@
 
 ```bash
 📁 src
- ┣ 📁 components
- ┣ 📁 pages
  ┣ 📁 assets
- ┣ 📁 hooks
+ ┣ 📁 components
+ ┣ 📁 data
+ ┣ 📁 views
  ┣ 📜 App.js
  ┗ 📜 index.js
-🚀 배포 (Deployment)
+```
+## 🚀 배포 (Deployment)
 
 👉 https://silverstargo.github.io/react_portfolio
 
 npm run deploy
-```
+
 
 ## 📖 구현 상세 (Details)
 🎨 UI/UX
@@ -65,8 +66,6 @@ Typewriter 효과 구현
 
 프로젝트 카드 Hover 효과
 
-모바일 대응 반응형 UI
-
 ## 🧩 설치 및 실행 방법 (Installation & Usage)
 # 패키지 설치
 npm install
@@ -83,5 +82,5 @@ npm run deploy
 ## 👤 개발자 (Author)
 
 ### 정은성 (Eunsung Jeong)
-📧 이메일: (작성)
+📧 이메일: 8ohowb@naver.com
 🔗 GitHub: https://github.com/silverstargo
