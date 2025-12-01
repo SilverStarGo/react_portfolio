@@ -25,39 +25,42 @@ const Intro = forwardRef((props, ref) => {
           src={bgImage} alt='bgIMG' className='bg_img'
         />
 
-        <motion.h1
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          안녕하세요.
-        </motion.h1>
+        <div className='intro_box'>
+          <motion.h1
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            안녕하세요.
+          </motion.h1>
 
-        <div className='intro_title'>
-          {done ? (
-            '직접 만들며 배우는 프론트엔드 개발자 정은성입니다'
-          ) : (
-            <Typewriter
-              words={[
-                ' ',
-                '모르는 것을 두려워하지 않고',
-                '직접 만들며 배우는 프론트엔드 개발자 정은성입니다',
-              ]}
-              loop={1}
-              cursor
-              cursorStyle='|'
-              typeSpeed={70}
-              deleteSpeed={40}
-              delaySpeed={1500}
-              onLoopDone={() => setDone(true)} // 애니메이션 끝나면 텍스트로 고정
-            />
-          )}
-        </div>
+          <div className='intro_title'>
+            {done ? (
+              '직접 만들며 배우는 프론트엔드 개발자 정은성입니다'
+            ) : (
+              <Typewriter
+                words={[
+                  ' ',
+                  '모르는 것을 두려워하지 않고',
+                  '직접 만들며 배우는 프론트엔드 개발자 정은성입니다',
+                ]}
+                loop={1}
+                cursor
+                cursorStyle='|'
+                typeSpeed={70}
+                deleteSpeed={40}
+                delaySpeed={1500}
+                onLoopDone={() => setDone(true)} // 애니메이션 끝나면 텍스트로 고정
+              />
+            )}
+          </div>
 
-        <div className='intro_text'>
-          <p>작은 도전이 모여</p>
-          <p>저를 성장시킨다는 믿음으로</p>
-          <p>매일 한 걸음씩 나아가고 있습니다.</p>
+          <div className='intro_text'>
+            <p>작은 도전이 모여</p>
+            <p>저를 성장시킨다는 믿음으로</p>
+            <p>매일 한 걸음씩 나아가고 있습니다.</p>
+          </div>
+
         </div>
 
         <motion.div
